@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\FulfillmentPlatform.Application\FulfillmentPlatform.Application.csproj" />
+    <ProjectReference Include="..\..\FulfillmentPlatform.Domain\FulfillmentPlatform.Domain.csproj" />
+  </ItemGroup>
+</Project>
+

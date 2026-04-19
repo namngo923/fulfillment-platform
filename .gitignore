@@ -10,6 +10,9 @@
 *.userosscache
 *.sln.docstates
 *.env
+.dotnet-cli/
+.nuget/
+setup_project.sh
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

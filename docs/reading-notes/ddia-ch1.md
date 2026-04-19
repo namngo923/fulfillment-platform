@@ -3,7 +3,7 @@
 > **Sách:** Designing Data-Intensive Applications, 2nd Edition — Martin Kleppmann  
 > **Trang:** 25–49  
 > **Hoàn thành:** Tuần 1, Tháng 1/2026  
-> **Project áp dụng:** Multi-tenant Fulfillment Platform (.NET 8, PostgreSQL, RabbitMQ, AWS)
+> **Project áp dụng:** Multi-tenant Fulfillment Platform (.NET 10, PostgreSQL, RabbitMQ, AWS)
 
 ---
 
@@ -137,3 +137,4 @@ Cách handle: Outbox Pattern với MassTransit (Phase 2).
 ---
 
 *Tiếp theo: [DDIA Ch.2 — Defining Nonfunctional Requirements](./ddia-ch2.md)*
+
