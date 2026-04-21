@@ -3,7 +3,7 @@
 > **Sách:** Designing Data-Intensive Applications, 2nd Edition — Martin Kleppmann  
 > **Trang:** 50–89  
 > **Hoàn thành:** Tuần 3, Tháng 4/2026  
-> **Project áp dụng:** Multi-tenant Fulfillment Platform (.NET 10, PostgreSQL, RabbitMQ, AWS)
+> **Project áp dụng:** Multi-tenant Fulfillment Platform (.NET 8, PostgreSQL, RabbitMQ, AWS)
 
 ---
 
@@ -165,4 +165,5 @@ Phase A không có khách hàng thật nên không cần SLA. Nhưng cần đị
 ---
 
 *Tiếp theo: [DDIA Ch.3 — Data Models and Query Languages](./ddia-ch3.md)*
+
 

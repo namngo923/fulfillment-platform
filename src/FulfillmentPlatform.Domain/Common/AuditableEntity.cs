@@ -2,9 +2,13 @@ namespace FulfillmentPlatform.Domain.Common;
 
 public abstract class AuditableEntity
 {
-    public DateTime CreatedAtUtc { get; protected set; } = DateTime.UtcNow;
+    public Guid Id {set;get;}
 
-    public DateTime UpdatedAtUtc { get; protected set; } = DateTime.UtcNow;
+    public TenantId TenantId{set;get;}
 
-    protected void Touch() => UpdatedAtUtc = DateTime.UtcNow;
+    public DateTimeOffset CreatedAt{set;get;}
+    public DateTimeOffset CreatedAt{set;get;}
+
+    [Timestamp]
+    public byte[] RowVersion { get; set; }
 }
