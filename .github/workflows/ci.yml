@@ -18,5 +18,7 @@ jobs:
         run: dotnet restore FulfillmentPlatform.sln
       - name: Build
         run: dotnet build FulfillmentPlatform.sln --configuration Release --no-restore
+      - name: Test
+        run: dotnet test FulfillmentPlatform.sln --configuration Release --no-build --verbosity normal
 
 
