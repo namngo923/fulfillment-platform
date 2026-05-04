@@ -13,23 +13,20 @@ public sealed class Order : AuditableEntity
         CustomerId = customerId;
         Status = OrderStatus.Pending;
         CreatedAt = DateTimeOffset.UtcNow;
-        UpdatedAt = DateTimeOffset.UtcNow;
     }
-
-
-    public TenantId TenantId { get; }
-
     public string CustomerId { get; }
-
     public OrderStatus Status { get; private set; }
-
-    public IReadOnlyCollection<OrderItem> Items => _items;
-
+    public string? TrackingNumber { get; private set; }
+    public IReadOnlyCollection<OrderItem> Items => _items.AsReadOnly();
     public void AddItem(OrderItem item)
     {
+        if (Status != OrderStatus.Pending)
+            throw new InvalidOperationException("Can only add items to pending orders.");
+
         _items.Add(item);
         Touch();
     }
+
 
     public void Confirm()
     {

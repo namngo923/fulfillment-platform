@@ -2,9 +2,11 @@ namespace FulfillmentPlatform.Domain.Orders;
 
 public enum OrderStatus
 {
-    Draft = 0,
-    Pending = 1,
-    Confirmed = 2,
-    Cancelled = 3,
-    Shipped = 4
+    Pending = 0,
+    Confirmed = 1,
+    Picking = 2,
+    Packed = 3,
+    Shipped = 4,
+    Delivered = 5,
+    Cancelled = 99
 }

@@ -14,7 +14,6 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<AppDbContext>();
         services.AddSingleton<AppDbContextFactory>();
         services.AddSingleton<OrderRepository>();
-        services.AddSingleton<InventoryRepository>();
         services.AddSingleton<IShippingProvider, MockShippingProvider>();
 
         return services;
